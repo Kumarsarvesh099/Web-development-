@@ -4,7 +4,7 @@ export default function EarthGlobe({ perf }) {
   return (
     <div className="w-full h-full min-h-[160px] flex items-center justify-center p-4">
       <motion.img
-        src="/src/assets/globe/contact-globe.png"
+        src="/assets/globe/contact-globe.png"
         alt="Global connectivity globe"
         className="w-full max-w-[220px] h-auto object-contain"
         style={{ filter: 'drop-shadow(0 0 30px rgba(34,211,238,0.4)) brightness(1.1)' }}

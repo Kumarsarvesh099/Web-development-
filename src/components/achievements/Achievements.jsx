@@ -28,7 +28,7 @@ export default function Achievements() {
           {/* backdrop image — more visible */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
             <img
-              src="/src/assets/sections/achievements.png"
+              src="/assets/sections/achievements.png"
               alt=""
               className="w-full max-w-2xl object-contain"
               onError={(e) => { e.currentTarget.style.display = 'none' }}

@@ -10,7 +10,7 @@ export default function HeroCenter({ perf }) {
     >
       {/* decorative purple planet */}
       <motion.img
-        src="/src/assets/planets/about.png"
+        src="/assets/planets/about.png"
         alt=""
         className="hidden tablet:block absolute top-0 left-0 w-16 opacity-75 drop-shadow-[0_0_18px_rgba(139,92,246,0.6)]"
         animate={{ y: [0, -12, 0], rotate: [0, 8, 0] }}
@@ -18,7 +18,7 @@ export default function HeroCenter({ perf }) {
         onError={(e) => { e.currentTarget.style.display = 'none' }}
       />
       <motion.img
-        src="/src/assets/planets/contact.png"
+        src="/assets/planets/contact.png"
         alt=""
         className="hidden tablet:block absolute bottom-16 right-0 w-12 opacity-65 drop-shadow-[0_0_14px_rgba(59,130,246,0.5)]"
         animate={{ y: [0, 10, 0], scale: [1, 1.08, 1] }}
@@ -26,7 +26,7 @@ export default function HeroCenter({ perf }) {
         onError={(e) => { e.currentTarget.style.display = 'none' }}
       />
       <motion.img
-        src="/src/assets/spaceship/spaceship.png"
+        src="/assets/spaceship/spaceship.png"
         alt=""
         className="absolute top-0 right-0 w-20 tablet:w-28 laptop:w-36 drop-shadow-[0_0_25px_rgba(59,130,246,0.5)]"
         animate={{ x: [0, 16, 0], y: [0, -10, 0], rotate: [2, -2, 2] }}
@@ -111,7 +111,7 @@ export default function HeroCenter({ perf }) {
 
       {/* AVATAR — bigger, rises from base */}
       <motion.img
-        src="/src/assets/avatar/avatar.png"
+        src="/assets/avatar/avatar.png"
         alt="Sarvesh avatar"
         className="relative z-10 w-auto"
         style={{

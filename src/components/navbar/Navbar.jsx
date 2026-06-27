@@ -35,7 +35,7 @@ export default function Navbar({ active }) {
       >
         <button className="flex items-center gap-3" onClick={() => scrollTo('home')}>
           <img
-            src="/src/assets/logo/logo.png"
+            src="/assets/logo/logo.png"
             alt="logo"
             className="w-8 h-8 object-contain drop-shadow-[0_0_10px_rgba(34,211,238,.5)] animate-pulseGlow"
             onError={(e) => { e.currentTarget.style.display = 'none' }}

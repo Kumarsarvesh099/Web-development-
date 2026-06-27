@@ -25,7 +25,7 @@ export default function SkillsGalaxy({ perf }) {
           className="relative mx-auto max-w-3xl mb-10 rounded-card overflow-hidden"
         >
           <img
-            src="/src/assets/sections/skills.png"
+            src="/assets/sections/skills.png"
             alt="Skills galaxy overview"
             className="w-full h-auto object-contain drop-shadow-[0_0_50px_rgba(139,92,246,0.35)]"
             onError={(e) => { e.currentTarget.parentElement.style.display = 'none' }}

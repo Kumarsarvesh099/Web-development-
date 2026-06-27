@@ -45,7 +45,7 @@ export default function About() {
           >
             {/* Avatar fills most of the card */}
             <motion.img
-              src="/src/assets/avatar/about-avatar.png"
+              src="/assets/avatar/about-avatar.png"
               alt="Sarvesh"
               className="object-contain mb-3"
               style={{
@@ -64,7 +64,7 @@ export default function About() {
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" /> Available
             </p>
             <p className="text-cyan font-grotesk text-sm mb-5">Full Stack Developer</p>
-            <GlassButton variant="glass" icon={<FaDownload />} href="/src/assets/resume/resume.pdf">
+            <GlassButton variant="glass" icon={<FaDownload />} href="/assets/resume/resume.pdf">
               RESUME
             </GlassButton>
           </motion.div>

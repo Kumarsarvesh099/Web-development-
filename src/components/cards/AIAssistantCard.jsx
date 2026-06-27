@@ -37,7 +37,7 @@ export default function AIAssistantCard() {
       {/* Header: robot image + title inline */}
       <div className="flex items-center gap-3 mb-4">
         <motion.img
-          src="/src/assets/robot/robot.png"
+          src="/assets/robot/robot.png"
           alt="AI robot"
           className="w-12 h-12 object-contain flex-shrink-0 drop-shadow-[0_0_14px_rgba(34,211,238,0.7)] rounded-lg"
           style={{ background: 'transparent' }}

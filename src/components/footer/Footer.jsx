@@ -31,7 +31,7 @@ export default function Footer() {
     <footer className="relative border-t border-cyan/10 bg-white/[0.02] backdrop-blur-xl py-10 px-5 md:px-12">
       <div className="max-w-6xl mx-auto flex flex-col tablet:flex-row items-center justify-between gap-8 text-sm text-slate-muted">
         <div className="flex items-center gap-3">
-          <img src="/src/assets/logo/logo.png" alt="logo" className="w-8 h-8 object-contain animate-pulseGlow" onError={(e) => { e.currentTarget.style.display = 'none' }} />
+          <img src="/assets/logo/logo.png" alt="logo" className="w-8 h-8 object-contain animate-pulseGlow" onError={(e) => { e.currentTarget.style.display = 'none' }} />
           <div>
             <p className="font-orbitron text-xs font-bold gradient-text">SARVESH</p>
             <p className="text-[9px] text-cyan tracking-[3px]">DEVELOPER</p>

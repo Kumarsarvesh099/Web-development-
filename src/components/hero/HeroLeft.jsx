@@ -77,7 +77,7 @@ export default function HeroLeft() {
         <GlassButton variant="primary" icon={<FaArrowRight className="group-hover:translate-x-1 transition-transform" />} onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
           EXPLORE MY WORK
         </GlassButton>
-        <GlassButton variant="glass" icon={<FaDownload />} href="/src/assets/resume/resume.pdf">
+        <GlassButton variant="glass" icon={<FaDownload />} href="/assets/resume/resume.pdf">
           DOWNLOAD RESUME
         </GlassButton>
       </motion.div>

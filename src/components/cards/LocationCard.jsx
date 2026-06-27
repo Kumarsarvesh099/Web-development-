@@ -11,7 +11,7 @@ export default function LocationCard() {
       </div>
       <div className="flex items-center gap-4">
         <motion.img
-          src="/src/assets/globe/location-globe.png"
+          src="/assets/globe/location-globe.png"
           alt="location globe"
           className="w-20 h-20 object-contain drop-shadow-[0_0_18px_rgba(34,211,238,0.7)] flex-shrink-0"
           animate={{ rotate: 360 }}

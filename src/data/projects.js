@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     title: 'Weather App',
     description: 'A real-time weather application with live location detection and forecasts.',
-    image: '/src/assets/projects/weather-app.png',
+    image: '/assets/projects/weather-app.png',
     github: 'https://github.com/Sarvesh099/weather-app',
     live: '#',
     tech: ['React', 'API', 'CSS'],
@@ -11,7 +11,7 @@ export const PROJECTS = [
   {
     title: 'Password Generator',
     description: 'A secure, customizable password generator with strength meter.',
-    image: '/src/assets/projects/password-generator.png',
+    image: '/assets/projects/password-generator.png',
     github: '#',
     live: '#',
     tech: ['React', 'Tailwind'],
@@ -20,7 +20,7 @@ export const PROJECTS = [
   {
     title: 'Shopping Cart',
     description: 'A full e-commerce shopping cart flow with cart state and checkout.',
-    image: '/src/assets/projects/shopping-cart.png',
+    image: '/assets/projects/shopping-cart.png',
     github: '#',
     live: '#',
     tech: ['React', 'Context API', 'Tailwind'],
@@ -29,7 +29,7 @@ export const PROJECTS = [
   {
     title: 'StudyNotion',
     description: 'An EdTech platform for instructors and students to create and consume courses.',
-    image: '/src/assets/projects/study-notion.png',
+    image: '/assets/projects/study-notion.png',
     github: '#',
     live: '#',
     tech: ['MERN', 'Razorpay', 'Redux'],
@@ -38,7 +38,7 @@ export const PROJECTS = [
   {
     title: 'Netflix Clone',
     description: 'A pixel-accurate Netflix UI clone with TMDB API integration.',
-    image: '/src/assets/projects/netflix-clone.png',
+    image: '/assets/projects/netflix-clone.png',
     github: '#',
     live: '#',
     tech: ['React', 'Firebase', 'TMDB API'],
@@ -47,7 +47,7 @@ export const PROJECTS = [
   {
     title: 'AI Chatbot',
     description: 'An AI-powered chat assistant with streaming responses and conversation memory.',
-    image: '/src/assets/projects/ai-chatbot.png',
+    image: '/assets/projects/ai-chatbot.png',
     github: '#',
     live: '#',
     tech: ['React', 'Node.js', 'OpenAI API'],

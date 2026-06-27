@@ -14,11 +14,11 @@ export const CONTACT_INFO = {
 }
 
 export const NAV_ITEMS = [
-  { id: 'home', num: '01', label: 'Home', planet: '/src/assets/planets/home.png' },
-  { id: 'about', num: '02', label: 'About', planet: '/src/assets/planets/about.png' },
-  { id: 'skills', num: '03', label: 'Skills', planet: '/src/assets/planets/skills.png' },
-  { id: 'projects', num: '04', label: 'Projects', planet: '/src/assets/planets/projects.png' },
-  { id: 'experience', num: '05', label: 'Experience', planet: '/src/assets/planets/experience.png' },
-  { id: 'achievements', num: '06', label: 'Achievements', planet: '/src/assets/planets/achievements.png' },
-  { id: 'contact', num: '07', label: 'Contact', planet: '/src/assets/planets/contact.png' },
+  { id: 'home', num: '01', label: 'Home', planet: '/assets/planets/home.png' },
+  { id: 'about', num: '02', label: 'About', planet: '/assets/planets/about.png' },
+  { id: 'skills', num: '03', label: 'Skills', planet: '/assets/planets/skills.png' },
+  { id: 'projects', num: '04', label: 'Projects', planet: '/assets/planets/projects.png' },
+  { id: 'experience', num: '05', label: 'Experience', planet: '/assets/planets/experience.png' },
+  { id: 'achievements', num: '06', label: 'Achievements', planet: '/assets/planets/achievements.png' },
+  { id: 'contact', num: '07', label: 'Contact', planet: '/assets/planets/contact.png' },
 ]

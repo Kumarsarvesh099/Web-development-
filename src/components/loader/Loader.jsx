@@ -34,7 +34,7 @@ export default function Loader({ onDone }) {
           className="fixed inset-0 z-[200] bg-space flex flex-col items-center justify-center"
         >
           <motion.img
-            src="/src/assets/logo/logo.png"
+            src="/assets/logo/logo.png"
             alt="logo"
             className="w-20 h-20 mb-6 drop-shadow-[0_0_25px_rgba(34,211,238,0.6)]"
             initial={{ scale: 0, rotate: -45 }}
