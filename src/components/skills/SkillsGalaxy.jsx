@@ -34,11 +34,11 @@ export default function SkillsGalaxy({ perf }) {
 
         {/* full interactive skill chips — covers every skill, including ones not pictured above */}
         {isMobile ? (
-          <div className="flex gap-4 overflow-x-auto pb-4 snap-x">
+          <div className="grid grid-cols-4 gap-3">
             {SKILLS.map((s) => (
-              <div key={s.name} className="glass-card min-w-[100px] flex flex-col items-center gap-2 py-5 snap-center">
+              <div key={s.name} className="glass-card flex flex-col items-center gap-2 py-4 px-1">
                 <span className="text-2xl"><SkillIcon icon={s.icon} color={s.color} /></span>
-                <span className="text-[10px] font-grotesk text-slate-muted">{s.name}</span>
+                <span className="text-[9px] font-grotesk text-slate-muted text-center leading-tight">{s.name}</span>
               </div>
             ))}
           </div>

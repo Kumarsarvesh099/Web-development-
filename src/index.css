@@ -125,6 +125,55 @@ body::after {
   100% { background-position: 300% 50%; }
 }
 
+/* ---- Hero avatar / platform glow (CSS-driven so it's identical on touch + mouse) ---- */
+@keyframes avatarGlowPulse {
+  0%, 100% { opacity: 0.55; transform: translate(-50%, 0) scale(0.94); }
+  50%      { opacity: 1;    transform: translate(-50%, 0) scale(1.08); }
+}
+.avatar-aura {
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(34,211,238,0.5) 0%, rgba(59,130,246,0.28) 45%, transparent 75%);
+  filter: blur(28px);
+  animation: avatarGlowPulse 3.4s ease-in-out infinite;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+@keyframes avatarDropGlow {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 45px rgba(34,211,238,0.55))
+      drop-shadow(0 0 90px rgba(59,130,246,0.28))
+      drop-shadow(0 40px 30px rgba(34,211,238,0.2));
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 75px rgba(34,211,238,0.85))
+      drop-shadow(0 0 140px rgba(59,130,246,0.4))
+      drop-shadow(0 55px 40px rgba(34,211,238,0.3));
+  }
+}
+.avatar-glow {
+  animation: avatarDropGlow 3.4s ease-in-out infinite;
+  will-change: filter;
+}
+
+@keyframes platformPulseGlow {
+  0%, 100% { filter: drop-shadow(0 0 10px rgba(34,211,238,0.45)); opacity: 0.75; }
+  50%      { filter: drop-shadow(0 0 26px rgba(34,211,238,0.95)); opacity: 1; }
+}
+.platform-glow {
+  animation: platformPulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes beamPulseGlow {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(34,211,238,0.4)); }
+  50%      { filter: drop-shadow(0 0 16px rgba(34,211,238,0.8)); }
+}
+.beam-glow {
+  animation: beamPulseGlow 2s ease-in-out infinite;
+}
+
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(34,211,238,.35); border-radius: 4px; }

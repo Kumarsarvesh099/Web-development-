@@ -33,7 +33,7 @@ export default function AIAssistantCard() {
   }
 
   return (
-    <GlassCard className="w-full relative overflow-visible">
+    <GlassCard className="w-full relative">
       {/* Header: robot image + title inline */}
       <div className="flex items-center gap-3 mb-4">
         <motion.img
@@ -99,17 +99,17 @@ export default function AIAssistantCard() {
       </div>
 
       {/* Input */}
-      <div className="flex items-center gap-2 border-t border-white/8 pt-3">
+      <div className="flex items-center gap-2 border-t border-white/8 pt-3 min-w-0">
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && send(input)}
           placeholder="Ask anything..."
-          className="flex-1 bg-transparent text-xs outline-none placeholder:text-slate-muted font-poppins text-slate-para"
+          className="min-w-0 flex-1 bg-transparent text-xs outline-none placeholder:text-slate-muted font-poppins text-slate-para"
         />
         <button
           onClick={() => send(input)}
-          className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan to-blue text-space flex items-center justify-center hover:scale-110 transition-transform flex-shrink-0"
+          className="w-8 h-8 min-w-[2rem] rounded-lg bg-gradient-to-br from-cyan to-blue text-space flex items-center justify-center hover:scale-110 transition-transform flex-shrink-0"
           data-cursor-hover
         >
           <IoSend size={12} />

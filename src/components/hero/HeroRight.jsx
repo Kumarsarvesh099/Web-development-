@@ -10,19 +10,26 @@ export default function HeroRight() {
       initial="hidden"
       animate="show"
       transition={{ staggerChildren: 0.15, delayChildren: 0.6 }}
-      className="grid grid-cols-1 sm:grid-cols-2 laptop:grid-cols-3 gap-4 items-start"
     >
-      {/* Column 1: Location on top, Status below — stacked */}
-      <div className="flex flex-col gap-4">
+      {/* Mobile layout: 2×2 grid
+          [Location]  [Status]
+          [TechStack] [AIAssistant]       */}
+      <div className="grid grid-cols-2 gap-3 laptop:hidden">
         <LocationCard />
         <StatusCard />
+        <TechStackCard />
+        <AIAssistantCard />
       </div>
 
-      {/* Column 2: Tech Stack (taller, fills height) */}
-      <TechStackCard />
-
-      {/* Column 3: AI Assistant */}
-      <AIAssistantCard />
+      {/* Laptop layout: 3-column (unchanged) */}
+      <div className="hidden laptop:grid laptop:grid-cols-3 gap-4 items-start">
+        <div className="flex flex-col gap-4">
+          <LocationCard />
+          <StatusCard />
+        </div>
+        <TechStackCard />
+        <AIAssistantCard />
+      </div>
     </motion.div>
   )
 }
